@@ -478,7 +478,7 @@ CPTImageSlices;
            CGImageGetBytesPerRow(selfCGImage) +
            CGImageGetBitmapInfo(selfCGImage) +
            CGImageGetShouldInterpolate(selfCGImage) +
-           CGImageGetRenderingIntent(selfCGImage) * (NSUInteger)self.scale;
+           (NSUInteger) (CGImageGetRenderingIntent(selfCGImage)) * (NSUInteger)self.scale;
 }
 
 /// @endcond
